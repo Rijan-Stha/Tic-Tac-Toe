@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: 'Fira Code';
+    background:#0f0011cc;
+}
+
+#GameChooser{
+    position: absolute;
+    width:400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Tropical Asian Demo;
+    transition: transform .4s ease-in-out;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+.heading *{
+    margin-inline-end: 1rem;
+}
+
+.heading span{
+    color: #cc8b13;
+}
+
+#gameUI{
+    transform:  translateY(-1000%);
+    transition:all .4s ease-in-out;
+}
+
+#select-container{
+    background-color:#0d122448 ;
+    box-shadow: 3px 3px 3px 2px #090d1f48, -3px -3px 3px 2px #090d1f48 ;
+    border-radius: 15px;
+    padding-inline: 20px;
+    font-size: 2rem;
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
+}
+
+#select{
+    position: relative;
+    background-color: #0f0011cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding:.8rem;
+}
+
+.choose{
+    text-align: center;
+    border-radius: 15px;
+    font-size: 3rem;
+    padding-block: .5rem;
+    cursor: pointer;
+    color: gold;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#chooseX{    
+    width: 50%;
+    background-color: white;
+}
+
+#chooseO{
+    width: 50%;
+}
+
+
+
+
+/* .choose:focus{
+    box-shadow: 2px 2px 3px 3px whitesmoke, -2px -2px 3px 3px wheat;
+} */
+
+.reminder{
+    text-align: center;
+}
+
+.gamenew{
+    width: 100%;
+}
+
+.newGame{
+    cursor: pointer;
+    padding-block: .8rem;
+    padding-inline: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    width:300px;
+    margin-inline: auto;
+    background-color: #0f142548;
+    margin-top:20px;
+    border-radius: 15px;
+    box-shadow: inset 0 -8px 3px  #171b2b48 ;
+}
+
+.newGame:hover{
+    transform: scale(1.05);
+}
+.newGame span{
+    margin-left:.4rem;
+    color: #cc8b13;
+}
+
+#title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    color: #cc8b13;
+}
+
+.game-board{
+    max-width: 100%;
+    margin-inline:auto;
+    width:400px;
+    aspect-ratio:1;
+    padding:15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap:13px;
+}
+.square{
+    background-color:#27357048;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 100px;
+    display: flex;
+    font-family:'Tropical Asian DEMO';
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -8px 0px #0f142548;
+    
+}
+.square:hover{
+    transform: scale(1.04);
+    transition: all .2s ease-in;
+}
+
+
+
+.result{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-color: green;
+    text-align: center;
+}
+.board{
+    position: relative;
+}
+
+#endGame{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(204,133,244,0.8);
+    font-size: 2rem;
+    color:white;
+    text-align: center;
+    padding-inline:1rem;
+    padding-block: 2.5rem;
+    border-radius: 20px;
+}
+
+#thinker{
+    text-align: center;
+    color: gold;
+}
