@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="main3.js" defer></script>
+</head>
+<body>
+<div id="GameChooser">
+    <div class="heading"><span>XY</span>Choose your game</div>
+     <div id="select-container">
+        <div id="select">
+            <div class="choose" id="chooseX">X</div>
+            <div class="choose" id="chooseO">O</div>
+        </div>
+        <div class="reminder">Reminder : X plays first</div>
+     </div>
+     <div class="gamenew">
+         <div class="newGame" id="vs-human">New Game<span>(vs human)</span></div>
+        <div class ='newGame' id="vs-computer">New Game<span>(vs Computer)</span></div>
+     </div>
+</div>
+<div id="gameUI">
+     <h1 id="title">Tic Tac Toe</h1>
+     <h2 class="result"></h2>
+    <div class="board">
+    <div class="game-board">
+        <div class="square" id="0"></div>
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+    </div>
+    <div id="endGame">
+        <div id="text"></div>
+    </div>
+    <div id="thinker"></div>
+    </div>
+    <button id="replay" onClick="startGame()">Replay</button>
+</div>
+</body>
+</html>
