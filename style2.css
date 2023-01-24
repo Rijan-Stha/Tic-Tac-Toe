@@ -140,7 +140,8 @@ body{
     background-color:#27357048;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 100px;
+    font-size: 3.8rem;
+    color:gold;
     display: flex;
     font-family:cursive;
     align-items: center;
