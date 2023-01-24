@@ -19,7 +19,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-family: Tropical Asian Demo;
+    font-family: Tropical Asian DEMO;
     transition: transform .4s ease-in-out;
 }
 
